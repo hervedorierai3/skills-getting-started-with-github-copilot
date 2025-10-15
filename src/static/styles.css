@@ -142,3 +142,73 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #e3f2fd;
+  border-radius: 4px;
+  border: 1px solid #bbdefb;
+}
+
+.participants-section strong {
+  color: #1565c0;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.participants-list {
+  list-style-type: none; /* hide bullets */
+  margin-left: 0;
+  padding-left: 0;
+  color: #333;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.participant-email {
+  word-break: break-all;
+  margin-right: 10px;
+}
+
+.btn-unregister {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.btn-unregister:hover {
+  background-color: rgba(198,40,40,0.08);
+}
+
+/* Brief highlight animation for updated activity cards */
+.activity-updated {
+  animation: highlight 1s ease-in-out;
+}
+
+@keyframes highlight {
+  0% { box-shadow: 0 0 0 0 rgba(33,150,243,0.0); transform: translateY(0); }
+  10% { box-shadow: 0 6px 18px rgba(33,150,243,0.12); transform: translateY(-2px); }
+  100% { box-shadow: 0 2px 6px rgba(0,0,0,0.06); transform: translateY(0); }
+}
+
+.no-participants {
+  color: #888;
+  font-style: italic;
+  margin-left: 2px;
+  font-size: 15px;
+}
